@@ -1,0 +1,14 @@
+2017-01-23 15:42:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
+/* Do not change this schema */
+CREATE TABLE User (
+    id varchar(6) PRIMARY KEY,
+    name varchar(200), secret varchar(200), password varchar(200)
+) [42101-193]
+2017-01-23 15:46:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER" already exists; SQL statement:
+/* Do not change this schema */
+CREATE TABLE User (
+    id varchar(6) PRIMARY KEY,
+    name varchar(200), secret varchar(200), password varchar(200)
+) [42101-193]
