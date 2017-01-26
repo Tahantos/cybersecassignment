@@ -4,12 +4,23 @@
         <title>Messages</title>
     </head>
     <body>
-        
+
         <header th:replace="fragments/header :: header">
             <p>header with links etc</p>
         </header>
 
-        <h1>Thank you! You have been signed up to the event!</h1>
+        <p>Messages:</p>
+        <br></br>
+        
+        <p th:each="item : ${messages}">
+            
+            <span th:utext="${item}">msg</span>
+        </p>
 
+        <form action="#" th:action="@{/messages}" method="POST" style="border: 2px green; padding: 10px; margin: 10px">
+            <p><label for="message">Message</label>: <input type="text" name="message" id="message" size="140"/></p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+        
     </body>
 </html>
